@@ -1,0 +1,39 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+      // Require by Figma
+      "jsx": "react-jsx",
+      "jsxImportSource": "preact",
+      // "jsxFragmentFactory": "figma.widget.Fragment",
+      "typeRoots": ["./node_modules/@types", "./node_modules/@figma"],
+      // end of Require by Figma
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "lib": ["dom", "ES2020"],
+      "module": "ES2020",
+      "moduleResolution": "Node",
+      "strict": true,
+      "declaration": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "target": "ES2020",
+      "rootDir": "./src",
+      "sourceMap": true,
+      "sourceRoot": "./",
+      "outDir": "./tsc",
+      // "skipLibCheck": true,
+      "paths": {
+        "@shared": ["./src/shared/index"],
+        "@shared/*": ["./src/shared/*"],
+        "@code": ["./src/code/index"],
+        "@code/*": ["./src/code/*"],
+        "@ui": ["./src/ui/index"],
+        "@ui/*": ["./src/ui/*"],
+        "@test/*": ["./tests/*"],
+        "!../css/base.css": ["../css/base.css"],
+      }
+    },
+    "exclude": ["node_modules", "tmp", "notes", "tests", "*.config.ts"]
+  }
+  
