@@ -22,18 +22,9 @@
       "sourceMap": true,
       "sourceRoot": "./",
       "outDir": "./tsc",
-      // "skipLibCheck": true,
-      "paths": {
-        "@shared": ["./src/shared/index"],
-        "@shared/*": ["./src/shared/*"],
-        "@code": ["./src/code/index"],
-        "@code/*": ["./src/code/*"],
-        "@ui": ["./src/ui/index"],
-        "@ui/*": ["./src/ui/*"],
-        "@test/*": ["./tests/*"],
-        "!../css/base.css": ["../css/base.css"],
-      }
     },
+    "extends": "@tsconfig/node12/tsconfig.json",
+    "include": ["src/**/*"],
     "exclude": ["node_modules", "tmp", "notes", "tests", "*.config.ts"]
   }
   

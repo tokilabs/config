@@ -1,10 +1,12 @@
 module.exports = {
+    plugins: ['@typescript-eslint'],
     root: true,
     parser: '@typescript-eslint/parser',
     parserOptions: {
       project: './tsconfig.tests.json',
       ecmaVersion: '2020',
       sourceType: 'module',
+      project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
     },
     ignorePatterns: ['node_modules', 'build', 'notes', 'build-*', '**/*.js'],
     globals: {
@@ -24,11 +26,11 @@ module.exports = {
       node: true,
     },
     extends: [
-      'preact',
       'plugin:@typescript-eslint/recommended',
       'plugin:@typescript-eslint/recommended-requiring-type-checking',
       'plugin:@typescript-eslint/strict',
       'prettier',
+      './tsconfig.eslint.json'
     ],
     plugins: ['@typescript-eslint', 'prettier'],
     rules: {
