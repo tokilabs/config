@@ -1,11 +1,11 @@
 {
     "private": true,
     "figma-plugin": {
-      "id": "cva",
+      "id": "teru",
       "editorType": [
         "figma"
       ],
-      "name": "CVA",
+      "name": "Teru",
       "main": "src/init.ts",
       "ui": "src/ui/index.tsx",
       "permissions": [
