@@ -1,6 +1,6 @@
 {
 	"extends": "packages/tsconfig/tsconfig.json",
-	"name": "prettier-config-custom",
+	"name": "prettier-config-tokilabs",
 	"version": "0.0.0",
 	"main": "index.js",
 	"license": "MIT",
@@ -19,3 +19,4 @@
 		}
 	  ]
 }
+
