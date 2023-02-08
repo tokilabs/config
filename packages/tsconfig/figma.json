@@ -1,11 +1,37 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./base.json",
   "display": "Default",
   "compilerOptions": {
    "jsx": "react-jsx",
    "jsxImportSource": "preact",  
    "typeRoots": ["./node_modules/@types", "./node_modules/@figma"]
   },
-  "exclude": ["node_modules"],
-  "extends": "./base.json"
+  "scripts": {
+    "lint": "yarn eslint ./src",
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch",
+    "livereload": "nodemon --watch build --exec 'osascript rerun-plugin.scpt'",
+    "dev": "yarn run watch & yarn run livereload"
+  },
+  "dependencies": {
+    "@create-figma-plugin/ui": "2.0.1",
+    "@create-figma-plugin/utilities": "2.0.1",
+    "@figma-plugin/helpers": "0.15.2",
+    "debug": "4.3.4",
+    "figma-api-stub": "0.0.56",
+    "linkstate": "2.0.1",
+    "preact": "10.11.3",
+    "react": "18.2.0"
+  },
+  "paths": {
+    "@code": ["./src/code/index"],
+    "@code/*": ["./src/code/*"],
+    "@ui": ["./src/ui/index"],
+    "@ui/*": ["./src/ui/*"],
+    "@test/*": ["./tests/*"],
+    "!../css/base.css": ["../css/base.css"]
+  },
+  "exclude": ["node_modules"]
 }
   

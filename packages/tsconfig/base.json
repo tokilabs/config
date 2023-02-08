@@ -1,5 +1,12 @@
-{
+{  
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "exclude": ["node_modules"],    
+    "compileOnSave": false,
     "compilerOptions": {
+        "importHelpers": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "typeRoots": ["./node_modules/@types"],
         "sourceRoot": "./",
         "outDir": "./tsc",
         "rootDir": "./src",
@@ -8,6 +15,8 @@
         "target": "ES2020",
         "module": "ES2020",
         "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
         "declaration": true,
         "declarationMap": true,
         "sourceMap": true,
@@ -23,6 +32,16 @@
         "alwaysStrict": true,
         "preserveConstEnums": true,
         "newLine": "lf",
-        "types": []
+        "types": [],
+		"forceConsistentCasingInFileNames": true,
+		"inlineSources": false,
+		"preserveWatchOutput": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictBindCallApply": true,
+		"allowUnreachableCode": false,
+		"allowSyntheticDefaultImports": true,
+		"incremental": true
     }
 }

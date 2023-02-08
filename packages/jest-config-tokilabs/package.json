@@ -1,23 +1,29 @@
-{   
+   
+  {
     "name": "jest-config-tokilabs",
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Default",
-    "compilerOptions": {
-      "composite": false,
-      "declaration": true,
-      "declarationMap": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "inlineSources": false,
-      "isolatedModules": true,
-      "moduleResolution": "node",
-      "noUnusedLocals": false,
-      "noUnusedParameters": false,
-      "preserveWatchOutput": true,
-      "skipLibCheck": true,
-      "strict": true
+    "version": "0.0.0",
+    "main": "jestconfig.js",
+    "scripts": {
+      "test": "jest",
+      "lint": "eslint ."
     },
-    "exclude": ["node_modules"],
-    "extends": ["packages/tsconfig/base.json"]
+    "jest": {
+      "verbose": true
+    },
+    "license": "MIT",
+    "dependencies": {
+      "jest-cli": "0.4.1",
+      "jspm": "0.15.5",
+      "react": "0.13.2",
+      "react-tools": "0.13.2",
+      "run-sequence": "1.1.0",
+      "eslint": "8.4.1",
+      "eslint-config-prettier": "8.3.0",
+      "eslint-plugin-prettier": "4.0.0",
+      "jest-snapshot-serializer-ansi": "1.0.0",
+      "jest-snapshot-serializer-raw": "1.2.0",
+      "prettier": "2.5.1"
+    }
   }
+  
   
