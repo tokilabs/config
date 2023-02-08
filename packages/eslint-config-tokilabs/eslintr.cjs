@@ -30,7 +30,7 @@ module.exports = {
       'plugin:@typescript-eslint/recommended-requiring-type-checking',
       'plugin:@typescript-eslint/strict',
       'prettier',
-      './tsconfig.eslint.json'
+      './eslint.json'
     ],
     plugins: ['@typescript-eslint', 'prettier'],
     rules: {

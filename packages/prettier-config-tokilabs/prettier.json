@@ -1,5 +1,4 @@
-{
-	"extends": "packages/tsconfig/tsconfig.json",
+{	
 	"name": "prettier-config-tokilabs",
 	"version": "0.0.0",
 	"main": "index.js",
@@ -17,6 +16,8 @@
 		{
 		  "options": { "parser": "json" }
 		}
-	  ]
+	  ]	,
+	"files": ["./prettierrc.js"],
+	"extends": "packages/tsconfig/base.json"
 }
 

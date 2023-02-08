@@ -18,6 +18,6 @@
       "strict": true
     },
     "exclude": ["node_modules"],
-    "extends": ["./jestconfig.js", "./tsconfig.json"]
+    "extends": ["packages/tsconfig/base.json"]
   }
   
