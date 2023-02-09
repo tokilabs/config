@@ -18,11 +18,11 @@
       "react-tools": "0.13.2",
       "run-sequence": "1.1.0",
       "eslint": "8.4.1",
-      "eslint-config-prettier": "8.3.0",
-      "eslint-plugin-prettier": "4.0.0",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-prettier": "^4.2.1",
       "jest-snapshot-serializer-ansi": "1.0.0",
       "jest-snapshot-serializer-raw": "1.2.0",
-      "prettier": "2.5.1"
+      "prettier": "2.8.0"
     }
   }
   
