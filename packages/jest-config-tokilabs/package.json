@@ -2,7 +2,7 @@
   {
     "name": "jest-config-tokilabs",
     "version": "0.0.0",
-    "main": "jestconfig.js",
+    "main": "index.js",
     "scripts": {
       "test": "jest",
       "lint": "eslint ."

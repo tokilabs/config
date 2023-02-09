@@ -1,7 +1,7 @@
 {
 	"name": "eslint-config-tokilabs",
 	"version": "0.0.2",
-	"main": "eslintrc.js",
+	"main": "index.js",
 	"license": "MIT",
 	"type": "commonjs",
 	"esnext": "latest",
