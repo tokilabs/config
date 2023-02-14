@@ -44,6 +44,8 @@
     "@typescript-eslint/eslint-plugin": "5.45.0",
     "@typescript-eslint/parser": "5.45.0",
     "class-transformer": "0.5.1",
+    "tsconfig": "file:./packages/tsconfig",
+    "prettier-config-tokilabs": "file:./packages/eslint-config-tokilabs",
     "eslint-config-tokilabs": "file:./packages/eslint-config-tokilabs",
     "jest": "29.3.1",
     "nodemon": "2.0.20",
