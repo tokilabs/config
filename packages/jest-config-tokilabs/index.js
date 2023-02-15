@@ -5,7 +5,7 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 
 module.exports = { 
-  extends: ["../tsconfig/base.json"],
+  extends: ["../tsconfig/base.json", "./package.json"],
   automock: false,  
   bail: 0,   
   cacheDirectory: "/tmp/jest_rt",

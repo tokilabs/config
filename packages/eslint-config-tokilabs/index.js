@@ -6,7 +6,7 @@ module.exports = {
       project: '',
       ecmaVersion: 'latest',
       sourceType: 'module',
-      project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
+      project: ['./packages/*'],
     },
     ignorePatterns: ['node_modules', 'build', 'notes', 'build-*'],
     globals: {
@@ -30,8 +30,9 @@ module.exports = {
       'plugin:@typescript-eslint/recommended-requiring-type-checking',
       'plugin:@typescript-eslint/strict',
       'prettier',
-      './eslint.json',
-      '../tsconfig/base.json'
+      './package.json',
+      '../tsconfig/base.json',
+      eslint
     ],
     plugins: ['@typescript-eslint', 'prettier'],
     rules: {

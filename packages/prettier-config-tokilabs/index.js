@@ -1,5 +1,6 @@
+
 module.exports = {
-  extends: ['..//tsconfig/base.json'],
+  extends: ['../tsconfig/base.json'],
   printWidth: 80,
   tabWidth: 2,
   singleQuote: true,
@@ -7,5 +8,6 @@ module.exports = {
 	arrowParens: "always",
 	useTabs: true,
 	semi: true,
-	bracketSpacing: false 
+	bracketSpacing: true,
+  bracketLine: true
 };

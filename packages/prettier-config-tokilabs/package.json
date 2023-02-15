@@ -1,8 +1,13 @@
 {
-	"name": "prettier-config-custom",
-	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT",
+	"peerDependencies": {
+		"prettier": "2.8.1"
+	  },
+	  "exports": ["./prettier-config-tokilabs"],
+	  "name": "prettier-config-tokilabs",
+	  "version": "1.0.0",
+	  "main": "index.js",
+	  "type": "commonjs",
+	  "esnext": "latest",
 	"dependencies": {
 		"prettier": "2.8.1",
 		"eslint-config-prettier": "8.5.0",
@@ -10,7 +15,15 @@
 	},
 	"publishConfig": {
 		"access": "public"
-	}
+	},
+	"scripts": {
+		"format": "prettier ."
+	},
+	"references": [
+		{
+		  "path": "./tsconfig/base.json"
+		}
+	  ]
 }
 
 
