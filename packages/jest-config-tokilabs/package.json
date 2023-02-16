@@ -10,8 +10,7 @@
     "type": "commonjs",
     "esnext": "latest",
     "scripts": {
-      "test": "jest",
-      "lint": "eslint ."
+      "test": "jest \"**/*.{ts,tsx,md,js,cjs}\""
     },
     "jest": {
       "verbose": true

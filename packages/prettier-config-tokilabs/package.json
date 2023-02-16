@@ -17,7 +17,7 @@
 		"access": "public"
 	},
 	"scripts": {
-		"format": "prettier ."
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
 	"references": [
 		{
