@@ -4,43 +4,30 @@
  */
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 
-module.exports = { 
-  extends: ["../tsconfig/base.json", "./package.json"],
-  automock: false,  
-  bail: 0,   
+module.exports = {
+  automock: false,
+  bail: 0,
   cacheDirectory: "/tmp/jest_rt",
-   // Automatically clear mock calls and instances between every test
+  // Automatically clear mock calls and instances between every test
   clearMocks: true,
-   // Indicates whether the coverage information should be collected while executing the test
+  // Indicates whether the coverage information should be collected while executing the test
   collectCoverage: true,
-   // The directory where Jest should output its coverage files
-  coverageDirectory: '',   
-  coveragePathIgnorePatterns: [
-     "/node_modules/"
-  ],
+  // The directory where Jest should output its coverage files
+  coverageDirectory: "./coverage",
+  coveragePathIgnorePatterns: ["/node_modules/"],
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: 'v8', 
+  coverageProvider: "v8",
   // A list of reporter names that Jest uses when writing coverage reports
-  coverageReporters: ['json-summary', 'lcov'],  
-  errorOnDeprecated: true,  
-  globals: {}, 
-  moduleDirectories: [
-    "node_modules"
-  ],   
-  moduleFileExtensions: [
-    "js",
-    "jsx",
-    "ts",
-    "tsx",
-    "json",
-    "node"
-     ],
+  coverageReporters: ["json-summary", "lcov"],
+  errorOnDeprecated: true,
+  moduleDirectories: ["node_modules"],
+  moduleFileExtensions: ["js", "jsx", "ts", "tsx", "json", "node"],
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {},
   // Activates notifications for test results
   notify: true,
   // A preset that is used as a base for Jest's configuration
-  preset: 'ts-jest',
+  preset: "ts-jest",
   // Run tests from one or more projects
   projects: undefined,
   // Use this configuration option to add custom reporters to Jest
@@ -54,7 +41,7 @@ module.exports = {
   // The root directory that Jest should scan for tests and modules within
   rootDir: "./",
   // A list of paths to directories that Jest should use to search for files in
-  roots: ['./src'],
+  roots: ["./src"],
   // Allows you to use a custom runner instead of Jest's default test runner
   runner: "jest-runner",
   // The paths to modules that run some code to configure or set up the testing environment before each test
@@ -70,9 +57,7 @@ module.exports = {
   // Adds a location field to test results
   testLocationInResults: true,
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: [
-    "/node_modules/"
-   ],
+  testPathIgnorePatterns: ["/node_modules/"],
   // The regexp pattern or array of patterns that Jest uses to detect test files
   testRegex: [],
   // This option allows use of a custom test runner
@@ -80,6 +65,6 @@ module.exports = {
   // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
   testURL: "http://localhost",
   // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
-  timers: "fake", 
-  transform: { "^.+\\.(t|j)s$": "ts-jest" },
-};
+  timers: "fake",
+  transform: {"^.+\\.(t|j)s$": "ts-jest"},
+}

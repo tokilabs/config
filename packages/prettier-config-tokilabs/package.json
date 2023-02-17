@@ -1,29 +1,19 @@
 {
-	"peerDependencies": {
-		"prettier": "2.8.1"
-	  },
-	  "exports": ["./prettier-config-tokilabs"],
-	  "name": "prettier-config-tokilabs",
-	  "version": "1.0.0",
-	  "main": "index.js",
-	  "type": "commonjs",
-	  "esnext": "latest",
+	"name": "prettier-config-tokilabs",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "commonjs",
+	"private": "false",
 	"dependencies": {
 		"prettier": "2.8.1",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-prettier": "4.2.1"
 	},
-	"publishConfig": {
-		"access": "public"
-	},
+	
 	"scripts": {
-		"format": "prettier --write \"**/*.{ts,tsx,md}\""
-	},
-	"references": [
-		{
-		  "path": "./tsconfig/base.json"
-		}
-	  ]
+		"format": "prettier --write \"**/*.{ts,tsx,md,js}\""
+	}
+	
 }
 
 

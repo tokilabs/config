@@ -1,9 +1,0 @@
-{
-	"name": "tsconfig",
-	"version": "1.0.0",
-	"private": false,
-	"files": [
-		"base.json",
-		"figma.json"
-	]
-}

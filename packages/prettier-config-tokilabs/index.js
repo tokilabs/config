@@ -1,13 +1,11 @@
-
 module.exports = {
-  extends: ['../tsconfig/base.json'],
-  printWidth: 80,
-  tabWidth: 2,
+  printWidth: 120,
+  arrowParens: 'always',
+  bracketSpacing: true,
+  semi: true,
   singleQuote: true,
+  tabWidth: 2,
   trailingComma: 'es5',
-	arrowParens: "always",
-	useTabs: true,
-	semi: true,
-	bracketSpacing: true,
-  bracketLine: true
+  useTabs: true,
+  endOfLine: 'lf'
 };

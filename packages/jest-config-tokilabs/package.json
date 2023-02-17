@@ -1,40 +1,32 @@
    
   {
-    "peerDependencies": {
-      "jest": "29.3.1"
-    },
-    "exports": ["./jest-config-tokilabs"],
     "name": "jest-config-tokilabs",
     "version": "1.0.0",
     "main": "index.js",
     "type": "commonjs",
-    "esnext": "latest",
+    
     "scripts": {
-      "test": "jest \"**/*.{ts,tsx,md,js,cjs}\""
+      "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
+      "lint": "yarn run eslint"
     },
-    "jest": {
-      "verbose": true
-    },
+    
     "license": "MIT",
+    
     "dependencies": {
-      "jest-cli": "0.4.1",
-      "jspm": "0.15.5",
-      "react": "0.13.2",
-      "react-tools": "0.13.2",
-      "run-sequence": "1.1.0",
-      "eslint": "8.4.1",
-      "eslint-config-prettier": "8.5.0",
+      "jest-cli": "^29.3.1",
+      "run-sequence": "2.2.1",
+      "eslint": "8.34.0",
+      "eslint-config-prettier": "8.6.0",
       "eslint-plugin-prettier": "4.2.1",
+      "eslint-config-tokilabs": "*",
+      "prettier-config-tokilabs": "*",
       "jest-snapshot-serializer-ansi": "1.0.0",
       "jest-snapshot-serializer-raw": "1.2.0",
-      "prettier": "2.8.0",
-      "jest": "29.3.1"
-    },
-    "references": [
-      {
-        "path": "./tsconfig/base.json"
-      }
-      ]
+      "prettier": "2.8.4",
+      "jest": "29.4.3",
+      "ts-jest": "29.0.5"
+    }
+    
   }
   
   
