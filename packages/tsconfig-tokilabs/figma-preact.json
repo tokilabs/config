@@ -1,22 +1,21 @@
 {
-  "extends": "./base.json",
-  "$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "./base.json",
+	"$schema": "https://json.schemastore.org/tsconfig",
 
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact",  
-    "typeRoots": ["./node_modules/@types", "./node_modules/@figma"]
-  },
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact",
+		"typeRoots": ["./node_modules/@types", "./node_modules/@figma"]
+	},
 
-  "paths": {
-    "@code": ["./src/code/index"],
-    "@code/*": ["./src/code/*"],
-    "@ui": ["./src/ui/index"],
-    "@ui/*": ["./src/ui/*"],
-    "@test/*": ["./tests/*"],
-    "!../css/base.css": ["../css/base.css"]
-  },
+	"paths": {
+		"@code": ["./src/code/index"],
+		"@code/*": ["./src/code/*"],
+		"@ui": ["./src/ui/index"],
+		"@ui/*": ["./src/ui/*"],
+		"@test/*": ["./tests/*"],
+		"!../css/base.css": ["../css/base.css"]
+	},
 
-  "exclude": ["node_modules"]
+	"exclude": ["node_modules"]
 }
-  

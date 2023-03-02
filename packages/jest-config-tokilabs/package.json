@@ -1,32 +1,25 @@
-   
-  {
-    "name": "jest-config-tokilabs",
-    "version": "1.0.0",
-    "main": "index.js",
-    "type": "commonjs",
-    
-    "scripts": {
-      "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
-      "lint": "yarn run eslint"
-    },
-    
-    "license": "MIT",
-    
-    "dependencies": {
-      "jest-cli": "^29.3.1",
-      "run-sequence": "2.2.1",
-      "eslint": "8.34.0",
-      "eslint-config-prettier": "8.6.0",
-      "eslint-plugin-prettier": "4.2.1",
-      "eslint-config-tokilabs": "*",
-      "prettier-config-tokilabs": "*",
-      "jest-snapshot-serializer-ansi": "1.0.0",
-      "jest-snapshot-serializer-raw": "1.2.0",
-      "prettier": "2.8.4",
-      "jest": "29.4.3",
-      "ts-jest": "29.0.5"
-    }
-    
-  }
-  
-  
+{
+	"name": "jest-config-tokilabs",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "commonjs",
+	"scripts": {
+		"format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
+		"lint": "eslint --fix ./"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"eslint": "8.34.0",
+		"eslint-config-tokilabs": "*",
+		"jest": "29.4.3",
+		"jest-cli": "^29.3.1",
+		"jest-snapshot-serializer-ansi": "1.0.0",
+		"jest-snapshot-serializer-raw": "1.2.0",
+		"prettier": "2.8.4",
+		"prettier-config-tokilabs": "*",
+		"run-sequence": "2.2.1",
+		"ts-jest": "29.0.5",
+		"tsconfig-tokilabs": "*",
+		"typescript": "4.9.4"
+	}
+}

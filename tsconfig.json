@@ -1,0 +1,8 @@
+{
+	"extends": "tsconfig-tokilabs/base.json",
+	"compilerOptions": {
+		"rootDir": "./"
+	},
+	"include": ["./**/*"],
+	"exclude": ["./**/*.spec.ts"]
+}

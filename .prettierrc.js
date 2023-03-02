@@ -1,1 +1,1 @@
-module.exports = require("prettier-config-tokilabs")
+module.exports = require("prettier-config-tokilabs");
