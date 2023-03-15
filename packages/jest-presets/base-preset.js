@@ -3,7 +3,6 @@
  * https://jestjs.io/docs/configuration
  */
 /** @type {import('ts-jest').JestConfigWithTsJest} */
-
 module.exports = {
 	automock: false,
 	bail: 0,
@@ -41,7 +40,7 @@ module.exports = {
 	// The root directory that Jest should scan for tests and modules within
 	rootDir: "./",
 	// A list of paths to directories that Jest should use to search for files in
-	roots: ["./src"],
+	roots: [],
 	// Allows you to use a custom runner instead of Jest's default test runner
 	runner: "jest-runner",
 	// The paths to modules that run some code to configure or set up the testing environment before each test

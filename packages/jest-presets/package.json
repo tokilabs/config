@@ -1,0 +1,8 @@
+{
+	"name": "@tokilabs/jest-presets",
+	"version": "1.0.0",
+	"license": "MIT",
+	"dependencies": {
+		"ts-jest": "29.0.5"
+	}
+}

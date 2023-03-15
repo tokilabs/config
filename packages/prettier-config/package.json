@@ -1,0 +1,40 @@
+{
+	"name": "@tokilabs/prettier-config",
+	"version": "1.0.0",
+  "description": "Toki Labs Prettier Config",
+  "main": "config.js",
+  "license": "MIT",
+	"author": "Toki Labs",
+	"contributors": [
+		{
+			"name": "Alberto Nunes",
+			"email": "alberto@toki.life"
+		},
+		{
+			"name": "Gabriela Sanches",
+			"email": "gabi@toki.life"
+		},
+		{
+			"name": "Saulo Vallory",
+			"email": "saulo@toki.life"
+		}
+	],
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tokilabs/config"
+  },
+  "homepage": "https://github.com/tokilabs/config",
+	"publishConfig": {
+			"access": "public"
+	},
+	"peerDependencies": {
+		"eslint": "8.34.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"prettier": "2.8.1"
+	}
+}

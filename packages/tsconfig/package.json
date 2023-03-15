@@ -1,5 +1,5 @@
 {
-	"name": "tsconfig-tokilabs",
+	"name": "@tokilabs/tsconfig",
 	"version": "1.0.0",
 	"files": [
 		"base.json",
