@@ -2,6 +2,35 @@
 	"name": "@tokilabs/jest-presets",
 	"version": "1.0.0",
 	"license": "MIT",
+	"main": "index.js",
+	"description": "Shared jest presets for Toki Labs projects",
+	"author": "Toki Labs",
+	"contributors": [
+		{
+			"name": "Alberto Nunes",
+			"email": "alberto@toki.life"
+		},
+		{
+			"name": "Gabriela Sanches",
+			"email": "gabi@toki.life"
+		},
+		{
+			"name": "Saulo Vallory",
+			"email": "saulo@toki.life"
+		}
+	],
+	"keywords": [
+		"jest",
+		"jest-config"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tokilabs/config"
+	},
+	"homepage": "https://github.com/tokilabs/config",
+	"publishConfig": {
+		"access": "public"
+	},
 	"dependencies": {
 		"ts-jest": "29.0.5"
 	}

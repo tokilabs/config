@@ -1,9 +1,33 @@
 {
   "name": "eslint-config-custom-server",
   "version": "0.0.0",
-  "private": true,
+  "description": "Shared ESLint config for Toki Labs projects",
   "license": "MIT",
   "main": "index.js",
+  "author": "Toki Labs",
+  "contributors": [
+    {
+      "name": "Alberto Nunes",
+      "email": "alberto@toki.life"
+    },
+    {
+      "name": "Gabriela Sanches",
+      "email": "gabi@toki.life"
+    },
+    {
+      "name": "Saulo Vallory",
+      "email": "saulo@toki.life"
+    }
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tokilabs/config"
+  },
+  "homepage": "https://github.com/tokilabs/config",
   "dependencies": {
     "eslint-config-turbo": "latest"
   },

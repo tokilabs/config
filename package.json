@@ -16,7 +16,7 @@
 		"@tokilabs/jest-presets": "workspace:*",
 		"@tokilabs/prettier-config": "workspace:*",
 		"@tokilabs/tsconfig": "workspace:*",
-		"@types/jest": "29.2.4",
+		"@types/jest": "^29.5.0",
 		"@types/node": "18.11.9",
 		"@types/nodemon": "1.19.2",
 		"eslint": "8.34.0",

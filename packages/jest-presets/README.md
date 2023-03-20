@@ -1,26 +1,46 @@
-# `jest-config-tokilabs`
+# Shared Jest presets
 
-Ease configuration for Jest
+This is Toki Labs shared for [Jest](https://jestjs.io) preset and it changes some of the default behavior.
 
-## Installation
+## Integrate into new project
 
-1. You'll first need to install [Jest](https://jestjs.io):
+#### 1. Install this package as devDependency
 
-```sh
-npm install jest --save-dev
+```bash
+# with Yarn
+$ yarn add -D @tokilabs/jest-presets
+
+# with npm
+$ npm i -D @tokilabs/jest-presets
+
+# with pnpm
+$ pnpm add -D @tokilabs/jest-presets
 ```
 
-2. Next, install `jest-config-tokilabs`:
+#### 2. Install peer dependencies
 
-```sh
-npm install jest-config-tokilabs --save-dev
+The configuration requires some packages (including jest) to work.
+You should install them in your project as devDependencies.
+
+To do that, you can make use of the tool [install-peerdeps](https://github.com/nathanhleung/install-peerdeps):
+
+```bash
+# with Yarn
+$ yarn dlx install-peerdeps --dev @tokilabs/jest-presets
+
+# with npm
+$ npx install-peerdeps --dev @tokilabs/jest-presets
+
+#with pnpm
+$ pnpm dlx install-peerdeps --dev @tokilabs/jest-presets
 ```
 
-## Usage
+#### 3. Configure your project
 
-Add `jest-config-tokilabs` to the extends section of your jest configuration file.
-```json
-{
-	"extends": ["jest-config-tokilabs"]
+Create a jest.config.js file in project root with the following content:
+
+```js
+module.exports = {
+ preset: "@tokilabs/jest-presets/node"
 }
 ```

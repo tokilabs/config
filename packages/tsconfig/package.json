@@ -1,6 +1,35 @@
 {
 	"name": "@tokilabs/tsconfig",
 	"version": "1.0.0",
+	"description": "Shared typescript config for Toki Labs projects",
+	"license": "MIT",
+	"author": "Toki Labs",
+	"scripts": {
+		"lint": "eslint --fix ./"
+	},
+	"contributors": [
+		{
+			"name": "Alberto Nunes",
+			"email": "alberto@toki.life"
+		},
+		{
+			"name": "Gabriela Sanches",
+			"email": "gabi@toki.life"
+		},
+		{
+			"name": "Saulo Vallory",
+			"email": "saulo@toki.life"
+		}
+	],
+	"keywords": [
+		"typescript",
+		"tsconfig"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tokilabs/config"
+	},
+	"homepage": "https://github.com/tokilabs/config",
 	"files": [
 		"base.json",
 		"figma.json"
@@ -14,7 +43,7 @@
 		"linkstate": "2.0.1",
 		"preact": "10.11.3"
 	},
-	"scripts": {
-		"lint": "eslint --fix ./"
+	"publishConfig": {
+		"access": "public"
 	}
 }

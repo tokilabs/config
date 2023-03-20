@@ -1,6 +1,6 @@
 # Shared Prettier configuration
 
-This is Toki Labs shared [ESLint](https://eslint.org/) configuration and it changes some of the default behavior.
+This is Toki Labs shared [ESLint](https://eslint.org/) configuration for custom servers and it changes some of the default behavior.
 
 ## Integrate into new project
 
@@ -8,13 +8,13 @@ This is Toki Labs shared [ESLint](https://eslint.org/) configuration and it chan
 
 ```bash
 # with Yarn
-$ yarn add -D @tokilabs/eslint-config
+$ yarn add -D @tokilabs/eslint-config-custom-server
 
 # with npm
-$ npm i -D @tokilabs/eslint-config
+$ npm i -D @tokilabs/eslint-config-custom-server
 
 # with pnpm
-$ pnpm add -D @tokilabs/eslint-config
+$ pnpm add -D @tokilabs/eslint-config-custom-server
 ```
 
 #### 2. Install peer dependencies
@@ -26,13 +26,13 @@ To do that, you can make use of the tool [install-peerdeps](https://github.com/n
 
 ```bash
 # with Yarn
-$ yarn dlx install-peerdeps --dev @tokilabs/eslint-config
+$ yarn dlx install-peerdeps --dev @tokilabs/eslint-config-custom-server
 
 # with npm
-$ npx install-peerdeps --dev @tokilabs/eslint-config
+$ npx install-peerdeps --dev @tokilabs/eslint-config-custom-server
 
 #with pnpm
-$ pnpm dlx install-peerdeps --dev @tokilabs/eslint-config
+$ pnpm dlx install-peerdeps --dev @tokilabs/eslint-config-custom-server
 ```
 
 #### 3. Configure your project
@@ -41,6 +41,6 @@ Create a `.eslintrc.js` file in project root with the following content:
 
 ```js
 module.exports = {
-  extends: ["@tokilabs/eslint-config"]
+  extends: ["@tokilabs/eslint-config-custom-server"]
 };
 ```

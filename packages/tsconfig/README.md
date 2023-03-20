@@ -1,29 +1,34 @@
-# `tsconfig-tokilabs`
+# Shared Typescript configuration
 
-Ease configuration for tsconfig
+This is Toki Labs shared [Typescript](https:typescriptlang.org) configuration and it changes some of the default behavior.
 
-## Installation
+## Integrate into new project
 
-1. You'll first need to install [Typescript](https:typescriptlang.org):
+#### 1. Install this package as devDependency
 
-```sh
-npm install typescript --save-dev
+```bash
+# with Yarn
+$ yarn add -D @tokilabs/tsconfig
+
+# with npm
+$ npm i -D @tokilabs/tsconfig
+
+# with pnpm
+$ pnpm add -D @tokilabs/tsconfig
 ```
 
-
-## Usage
-
-
-For a basic setup for your tsconfig
+#### 2. Configure your project
 
 ```json
 {
-	"extends": "tsconfig-tokilabs/base.json"
+ "extends": "@tokilabs/tsconfig/base.json"
 }
 ```
+
 For a setup of your figma project with preact
+
 ```json
 {
-	"extends": "tsconfig-tokilabs/figma-preact.json"
+ "extends": "@tokilabs/tsconfig/figma-preact.json"
 }
 ```
