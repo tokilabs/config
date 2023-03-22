@@ -29,7 +29,12 @@
   },
   "homepage": "https://github.com/tokilabs/config",
   "dependencies": {
-    "eslint-config-turbo": "latest"
+    "eslint": "^8.34.0",
+    "eslint-config-turbo": "^0.0.10"
+  },
+  "peerDependencies": {
+    "eslint": "^8.x",
+    "eslint-config-turbo": "^0.x"
   },
   "publishConfig": {
     "access": "public"

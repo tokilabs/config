@@ -31,10 +31,16 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"dependencies": {
+		"eslint": "^8.x",
+		"eslint-config-prettier": "^8.x",
+		"eslint-plugin-prettier": "^4.x",
+		"prettier": "^2.3.2"
+	},
 	"peerDependencies": {
-		"eslint": "8.34.0",
-		"eslint-config-prettier": "8.5.0",
-		"eslint-plugin-prettier": "4.2.1",
-		"prettier": "2.8.1"
+		"eslint": "^8.x",
+		"eslint-config-prettier": "^8.x",
+		"eslint-plugin-prettier": "^4.x",
+		"prettier": "^2.x"
 	}
 }
