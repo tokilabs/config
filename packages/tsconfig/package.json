@@ -1,6 +1,6 @@
 {
 	"name": "@tokilabs/tsconfig",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Shared typescript config for Toki Labs projects",
 	"license": "MIT",
 	"author": "Toki Labs",

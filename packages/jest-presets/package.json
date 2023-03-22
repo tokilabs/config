@@ -1,6 +1,6 @@
 {
 	"name": "@tokilabs/jest-presets",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"main": "index.js",
 	"description": "Shared jest presets for Toki Labs projects",

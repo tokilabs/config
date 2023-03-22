@@ -1,6 +1,6 @@
 {
   "name": "@tokilabs/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared ESLint config for Toki Labs projects",
   "main": "config.js",
   "license": "MIT",
