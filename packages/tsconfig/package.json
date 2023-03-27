@@ -40,7 +40,7 @@
 		"@figma-plugin/helpers": "^0.15.2",
 		"debug": "^4.3.4",
 		"figma-api-stub": "^0.0.56",
-		"linkstate": "^2.0.1",	
+		"linkstate": "^2.0.1",
 		"preact": "^10.11.3"
 	},
 	"publishConfig": {
