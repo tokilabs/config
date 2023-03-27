@@ -28,13 +28,13 @@
     "url": "https://github.com/tokilabs/config"
   },
   "homepage": "https://github.com/tokilabs/config",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "^8.34.0",
     "eslint-config-turbo": "^0.0.10"
   },
   "peerDependencies": {
-    "eslint": "^8.x",
-    "eslint-config-turbo": "^0.x"
+    "eslint": "8.x",
+    "eslint-config-turbo": "0.0.x"
   },
   "publishConfig": {
     "access": "public"
