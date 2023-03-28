@@ -1,7 +1,7 @@
 module.exports = {
-	root: true,
+	root: false,
 	// This tells ESLint to load the config from the package `eslint-config-custom`
-	extends: ["@tokilabs/eslint-config"],
+	extends: ["@tokilabs/eslint-config/nest"],
 	settings: {
 		next: {
 			rootDir: [""],
@@ -11,5 +11,5 @@ module.exports = {
 		"es2020": true,
 		"node": true,
 		"jest": true
-	  }
+	}
 };

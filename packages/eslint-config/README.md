@@ -44,3 +44,12 @@ module.exports = {
   extends: ["@tokilabs/eslint-config"]
 };
 ```
+#### 4. Configuration options
+`@tokilabs/eslint-config` common path for all projects
+
+`@tokilabs/eslint-config/nest` for Nest projects
+
+`@tokilabs/eslint-config/angular` for Angular projects
+
+`@tokilabs/eslint-config/svelte` for Svelte projects
+

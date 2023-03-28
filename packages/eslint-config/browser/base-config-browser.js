@@ -1,11 +1,7 @@
 module.exports = {
 	root: false,
 	parser: "@typescript-eslint/parser",
-	parserOptions: {
-		ecmaVersion: "latest",
-		project: "./tsconfig.json",
-	},
-	ignorePatterns: ["node_modules"],
+
 	globals: {
 		h: "readable",
 		figma: "readable",
@@ -14,13 +10,9 @@ module.exports = {
 		it: "readable",
 		expect: "readable",
 		cy: "readable",
-		jest: "readable",
 	},
 	env: {
 		browser: true,
-		es2021: true,
-		es2017: true,
-		node: true,
 	},
 	extends: [
 		"preact",
