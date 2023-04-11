@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "./base.json",
+	"compilerOptions": {
+		"module": "commonjs",
+		"outDir": "./lib",
+		"declaration": true,
+		"typeRoots": ["./node_modules/@types"],
+		"types": ["node"]
+	},
+	"exclude": ["**/*.spec.ts", "**/*.test.ts"],
+	"include": ["**/*.ts", "src/lib/templates/configs.ts.env", "src/lib/templates/email-service.ts"]
+}

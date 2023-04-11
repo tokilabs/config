@@ -8,11 +8,11 @@
 		"typeRoots": ["./node_modules/@types"],
 		"sourceRoot": "./",
 		"outDir": "./dist",
-		"rootDir": ".",
+		"rootDir": "./src",
 		"pretty": true,
 		"lib": ["dom", "ES2020"],
-		"target": "ES2020",
-		"module": "ES2020",
+		"target": "ESNext",
+		"module": "ESNext",
 		"moduleResolution": "node",
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
@@ -39,6 +39,8 @@
 		"strictBindCallApply": true,
 		"allowUnreachableCode": false,
 		"allowSyntheticDefaultImports": true,
-		"incremental": true
+		"incremental": true,
+		"files": [],
+		"include": []
 	}
 }
