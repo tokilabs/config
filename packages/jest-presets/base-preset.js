@@ -2,8 +2,11 @@
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
+import { defaults } from "jest-config";
+
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
+	...defaults,
 	automock: false,
 	bail: 0,
 	cacheDirectory: "/tmp/jest_rt",
@@ -61,9 +64,5 @@ module.exports = {
 	testRegex: [],
 	// This option allows use of a custom test runner
 	testRunner: "jest-circus/runner",
-	// This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
-	testURL: "http://localhost",
-	// Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
-	timers: "fake",
 	transform: { "^.+\\.(t|j)s$": "ts-jest" },
 };

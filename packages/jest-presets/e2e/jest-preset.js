@@ -9,10 +9,11 @@ import * as base from "../base-preset";
 module.exports = {
 	...base,
 	preset: "ts-jest",
-	roots: ["<rootDir>"],
+	moduleFileExtensions: ["js", "json", "ts"],
+	rootDir: ".",
+	testEnvironment: "node",
+	testRegex: ".e2e-spec.ts$",
 	transform: {
-		"^.+\\.tsx?$": "ts-jest",
+		"^.+\\.(t|j)s$": "ts-jest",
 	},
-	moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-	modulePathIgnorePatterns: ["<rootDir>/test/__fixtures__", "<rootDir>/node_modules", "<rootDir>/dist"],
 };
