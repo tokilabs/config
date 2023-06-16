@@ -4,9 +4,6 @@
 	"description": "Shared typescript config for Toki Labs projects",
 	"license": "MIT",
 	"author": "Toki Labs",
-	"scripts": {
-		"lint": "eslint --fix ./"
-	},
 	"contributors": [
 		{
 			"name": "Alberto Nunes",
