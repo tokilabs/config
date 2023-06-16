@@ -38,8 +38,6 @@
 		"strictBindCallApply": true,
 		"allowUnreachableCode": false,
 		"allowSyntheticDefaultImports": true,
-		"incremental": true,
-		"files": [],
-		"include": []
+		"incremental": true
 	}
 }
