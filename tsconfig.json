@@ -1,11 +1,11 @@
 {
 	"extends": "@tokilabs/tsconfig/base.json",
-	"compilerOptions": {
-		"rootDir": "./",
+  "compilerOptions": {
+    /* Specify multiple folders that act like './node_modules/@types'. */
 		"typeRoots": ["./node_modules/@types"],
+    /* Specify type package names to be included without being referenced in a source file. */
 		"types":["node", "jest"],
-		"isolatedModules": false
-	},
-	"include": ["./**/*"],
-	"exclude": ["./**/*.spec.ts"]
+    /* Ensure that each file can be safely transpiled without relying on other imports. */
+    "isolatedModules": false,
+  }
 }
