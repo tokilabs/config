@@ -1,5 +1,5 @@
-export * from "./vite";
-export * from "./vitest";
+export * from "./vite.cjs";
+export * from "./vitest.cjs";
 export { defineConfig as viteConfig } from "vite";
 export { defineConfig as vitestConfig, mergeConfig } from "vitest/config";
-//# sourceMappingURL=index.d.ts.map
+//# sourceMappingURL=index.d.cts.map

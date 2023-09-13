@@ -4,7 +4,7 @@ import { nxViteTsPaths } from "@nx/vite/plugins/nx-tsconfig-paths.plugin";
 import tsconfigPaths from "vite-tsconfig-paths";
 import dts from "vite-plugin-dts";
 import * as path from "path";
-import { findNodeModules } from "./util";
+import { findNodeModules } from "./lib/util.cjs";
 export const DEFAULT_VITE_OPTIONS = {
     enableSvelte: false,
     enableWorkers: false,
@@ -57,7 +57,7 @@ function getLibConfig(projectName, options) {
         // Configuration for building your library.
         // See: https://vitejs.dev/guide/build.html#library-mode
         build: {
-            target: "esnext",
+            target: "es6",
             assetsInlineLimit: 100000000,
             chunkSizeWarningLimit: 100000000,
             cssCodeSplit: false,
@@ -100,7 +100,7 @@ function getLibConfig(projectName, options) {
  */
 export function generateViteConfig(projectType, projectName, projectRoot, options = DEFAULT_VITE_OPTIONS) {
     const plugins = [];
-    options = { ...DEFAULT_VITE_OPTIONS, ...options };
+    options = Object.assign(Object.assign({}, DEFAULT_VITE_OPTIONS), options);
     if (options.enableSvelte) {
         plugins.push(svelte());
     }
@@ -112,11 +112,11 @@ export function generateViteConfig(projectType, projectName, projectRoot, option
         config = getLibConfig(projectName, options);
     }
     if (options.overrides) {
-        config = { ...config, ...options.overrides };
+        config = Object.assign(Object.assign({}, config), options.overrides);
     }
     if (options.returnJSON) {
         return config;
     }
     return defineConfig(config);
 }
-//# sourceMappingURL=vite.js.map
+//# sourceMappingURL=vite.cjs.map

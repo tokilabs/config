@@ -13,7 +13,7 @@ export declare const DEFAULT_VITEST_OPTIONS: {
  * - `test.globals` is set to `true`
  * - `test.cache.dir` is set to `../../../node_modules/.vitest`
  * - `test.environment` is set to `node`
- * - `test.include` is set to all { test, spec }.{ js, mjs, cjs, ts, mts, cts, jsx, tsx } files in `src/**`
+ * - `test.include` is set to all { test, spec }.{ js, cjs, cjs, ts, mts, cts, jsx, tsx } files in `src/**`
  */
 export declare function generateVitestConfig(environment: "jsdom" | "node", projectRoot: string, options?: Partial<typeof DEFAULT_VITEST_OPTIONS>): UserConfig | UserConfigExport;
-//# sourceMappingURL=vitest.d.ts.map
+//# sourceMappingURL=vitest.d.cts.map

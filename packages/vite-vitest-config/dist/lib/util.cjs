@@ -12,4 +12,4 @@ export function getCacheFolderFor(packageName, projectName) {
         throw new Error(`Could not find ${packageName} package. Make sure it is installed.`);
     }
 }
-//# sourceMappingURL=util.js.map
+//# sourceMappingURL=util.cjs.map

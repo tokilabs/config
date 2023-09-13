@@ -1,5 +1,5 @@
 import { type UserConfig, type UserConfigExport, defineConfig } from "vitest/config";
-import { findNodeModules } from "./util";
+import { findNodeModules } from "./lib/util.cjs";
 import path from "path";
 
 export const DEFAULT_VITEST_OPTIONS = {
@@ -17,7 +17,7 @@ export const DEFAULT_VITEST_OPTIONS = {
  * - `test.globals` is set to `true`
  * - `test.cache.dir` is set to `../../../node_modules/.vitest`
  * - `test.environment` is set to `node`
- * - `test.include` is set to all { test, spec }.{ js, mjs, cjs, ts, mts, cts, jsx, tsx } files in `src/**`
+ * - `test.include` is set to all { test, spec }.{ js, cjs, cjs, ts, mts, cts, jsx, tsx } files in `src/**`
  */
 export function generateVitestConfig(
 	environment: "jsdom" | "node",
@@ -39,7 +39,7 @@ export function generateVitestConfig(
 				dir: cacheDir,
 			},
 			environment,
-			include: ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+			include: ["src/**/*.{test,spec}.{js,cjs,cjs,ts,mts,cts,jsx,tsx}"],
 		},
 	};
 

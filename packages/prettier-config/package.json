@@ -42,5 +42,8 @@
 		"eslint-config-prettier": "^8.x",
 		"eslint-plugin-prettier": "^4.x",
 		"prettier": "^2.x"
+	},
+	"nx": {
+		"ignore": true
 	}
 }

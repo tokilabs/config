@@ -1,24 +1,38 @@
 {
   "extends": "@tokilabs/tsconfig/lib.json",
   "compilerOptions": {
+
     /* Visit https://aka.ms/tsconfig to read more about this file */
     /* Specify the root folder within your source files. */
     "rootDir": "./src",
     /* Specify an output folder for all emitted files. */
-    "outDir": "./lib",
+    "outDir": "./dist",
     /* Modules */
     /* Specify what module code is generated. */
-    "module": "ESNext",
+    "verbatimModuleSyntax": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES6",
+    "module": "ES6",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    // Figma only support up to ES6
+    "moduleDetection": "auto",
     "lib": [
-      "ESNext",
+      "ES6",
       "DOM"
     ],
     /* Specify multiple folders that act like './node_modules/@types'. */
     "typeRoots": [
+      "./node_modules",
       "./node_modules/@types",
     ]
   },
   "include": [
-    "./src/**/*.ts"
+    "**/*.ts",
+    "**/*.cts",
+    "**/*.mts",
   ],
 }

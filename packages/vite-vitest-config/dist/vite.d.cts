@@ -27,4 +27,4 @@ export type GenerateViteConfigOptions = Partial<typeof DEFAULT_VITE_OPTIONS> & {
  * @returns A UserConfigExport returned by vite's defineConfig (the default) or a UserConfig the JSON representation of the configuration.
  */
 export declare function generateViteConfig(projectType: "app" | "lib", projectName: string, projectRoot: string, options?: GenerateViteConfigOptions): UserConfigExport;
-//# sourceMappingURL=vite.d.ts.map
+//# sourceMappingURL=vite.d.cts.map

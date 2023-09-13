@@ -6,7 +6,7 @@ import { nxViteTsPaths } from "@nx/vite/plugins/nx-tsconfig-paths.plugin";
 import tsconfigPaths from "vite-tsconfig-paths";
 import dts from "vite-plugin-dts";
 import * as path from "path";
-import { findNodeModules } from "./util";
+import { findNodeModules } from "./lib/util.cjs";
 
 export const DEFAULT_VITE_OPTIONS = {
 	enableSvelte: false,
@@ -77,7 +77,7 @@ function getLibConfig(projectName: string, options: GenerateViteConfigOptions): 
 		// Configuration for building your library.
 		// See: https://vitejs.dev/guide/build.html#library-mode
 		build: {
-			target: "esnext",
+			target: "es6",
 			assetsInlineLimit: 100000000,
 			chunkSizeWarningLimit: 100000000,
 			cssCodeSplit: false,

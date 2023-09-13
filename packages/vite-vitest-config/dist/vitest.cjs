@@ -1,5 +1,5 @@
 import { defineConfig } from "vitest/config";
-import { findNodeModules } from "./util";
+import { findNodeModules } from "./lib/util.cjs";
 import path from "path";
 export const DEFAULT_VITEST_OPTIONS = {
     returnJSON: false,
@@ -15,7 +15,7 @@ export const DEFAULT_VITEST_OPTIONS = {
  * - `test.globals` is set to `true`
  * - `test.cache.dir` is set to `../../../node_modules/.vitest`
  * - `test.environment` is set to `node`
- * - `test.include` is set to all { test, spec }.{ js, mjs, cjs, ts, mts, cts, jsx, tsx } files in `src/**`
+ * - `test.include` is set to all { test, spec }.{ js, cjs, cjs, ts, mts, cts, jsx, tsx } files in `src/**`
  */
 export function generateVitestConfig(environment, projectRoot, options = DEFAULT_VITEST_OPTIONS) {
     const node_modules = findNodeModules(projectRoot);
@@ -30,7 +30,7 @@ export function generateVitestConfig(environment, projectRoot, options = DEFAULT
                 dir: cacheDir,
             },
             environment,
-            include: ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+            include: ["src/**/*.{test,spec}.{js,cjs,cjs,ts,mts,cts,jsx,tsx}"],
         },
     };
     if (options.returnJSON) {
@@ -38,4 +38,4 @@ export function generateVitestConfig(environment, projectRoot, options = DEFAULT
     }
     return defineConfig(config);
 }
-//# sourceMappingURL=vitest.js.map
+//# sourceMappingURL=vitest.cjs.map
