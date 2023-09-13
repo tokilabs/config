@@ -48,8 +48,8 @@ importers:
         specifier: ^1.7.4
         version: 1.10.13
       typescript:
-        specifier: ^4.8.4
-        version: 4.9.5
+        specifier: ^5.2.2
+        version: 5.2.2
 
   packages/eslint-config:
     devDependencies:
@@ -157,7 +157,7 @@ importers:
         version: 2.3.0(@types/node@18.17.15)(vite@4.3.9)
       vite-tsconfig-paths:
         specifier: ^4.2.1
-        version: 4.2.1(vite@4.3.9)
+        version: 4.2.1(typescript@5.2.2)(vite@4.3.9)
       vitest:
         specifier: ~0.34.4
         version: 0.34.4
@@ -4780,7 +4780,7 @@ packages:
       code-block-writer: 12.0.0
     dev: false
 
-  /tsconfck@2.1.2:
+  /tsconfck@2.1.2(typescript@5.2.2):
     resolution: {integrity: sha512-ghqN1b0puy3MhhviwO2kGF8SeMDNhEbnKxjK7h6+fvY9JAxqvXi8y5NAHSQv687OVboS2uZIByzGd45/YxrRHg==}
     engines: {node: ^14.13.1 || ^16 || >=18}
     hasBin: true
@@ -4789,6 +4789,8 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+    dependencies:
+      typescript: 5.2.2
     dev: false
 
   /tsconfig-paths@3.14.2:
@@ -4944,6 +4946,11 @@ packages:
     hasBin: true
     dev: false
 
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   /ufo@1.3.0:
     resolution: {integrity: sha512-bRn3CsoojyNStCZe0BG0Mt4Nr/4KF+rhFlnNXybgqt5pXHNFRlqinSoQaTrGyzE4X8aHplSb+TorH+COin9Yxw==}
     dev: false
@@ -5045,7 +5052,7 @@ packages:
       - supports-color
     dev: false
 
-  /vite-tsconfig-paths@4.2.1(vite@4.3.9):
+  /vite-tsconfig-paths@4.2.1(typescript@5.2.2)(vite@4.3.9):
     resolution: {integrity: sha512-GNUI6ZgPqT3oervkvzU+qtys83+75N/OuDaQl7HmOqFTb0pjZsuARrRipsyJhJ3enqV8beI1xhGbToR4o78nSQ==}
     peerDependencies:
       vite: '*'
@@ -5055,7 +5062,7 @@ packages:
     dependencies:
       debug: 4.3.4
       globrex: 0.1.2
-      tsconfck: 2.1.2
+      tsconfck: 2.1.2(typescript@5.2.2)
       vite: 4.3.9(@types/node@18.17.15)
     transitivePeerDependencies:
       - supports-color
