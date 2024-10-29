@@ -15,17 +15,17 @@
 		"@tokilabs/jest-presets": "workspace:*",
 		"@tokilabs/prettier-config": "workspace:*",
 		"@tokilabs/tsconfig": "workspace:*",
-		"@types/jest": "^29.5.0",
-		"@types/node": "^18.11.9",
-		"@types/nodemon": "^1.19.2",
-		"eslint": "^8.34.0",
-		"eslint-config-turbo": "^0.0.10",
-		"eslint-plugin-prettier": "^4.2.1",
-		"jest": "^29.3.1",
-		"nodemon": "^2.0.20",
-		"prettier": "^2.8.0",
-		"turbo": "^1.7.4",
-		"typescript": "^5.2.2"
+		"@types/jest": "^29.5.14",
+		"@types/node": "^22.8.2",
+		"@types/nodemon": "^1.19.6",
+		"eslint": "^9.13.0",
+		"eslint-config-turbo": "^2.2.3",
+		"eslint-plugin-prettier": "^5.2.1",
+		"jest": "^29.7.0",
+		"nodemon": "^3.1.7",
+		"prettier": "^3.3.3",
+		"turbo": "^2.2.3",
+		"typescript": "^5.6.3"
 	},
 	"nx": {
 		"ignore": true
