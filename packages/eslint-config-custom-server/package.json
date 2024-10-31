@@ -1,45 +1,41 @@
 {
-	"name": "@tokilabs/eslint-config-custom-server",
-	"version": "0.0.0",
-	"description": "Shared ESLint config for Toki Labs projects",
-	"license": "MIT",
-	"main": "index.js",
-	"author": "Toki Labs",
-	"contributors": [
-		{
-			"name": "Alberto Nunes",
-			"email": "alberto@toki.life"
-		},
-		{
-			"name": "Gabriela Sanches",
-			"email": "gabi@toki.life"
-		},
-		{
-			"name": "Saulo Vallory",
-			"email": "saulo@toki.life"
-		}
-	],
-	"keywords": [
-		"eslint",
-		"eslint-config"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/tokilabs/config"
-	},
-	"homepage": "https://github.com/tokilabs/config",
-	"devDependencies": {
-		"eslint": "^8.0.0",
-		"eslint-config-turbo": "^0.0.10"
-	},
-	"peerDependencies": {
-		"eslint": "^8.x",
-		"eslint-config-turbo": "^0.x"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"nx": {
-		"ignore": true
-	}
+  "name": "@tokilabs/eslint-config-custom-server",
+  "version": "0.0.0",
+  "description": "Shared ESLint config for Toki Labs projects",
+  "license": "MIT",
+  "main": "index.js",
+  "author": "Toki Labs",
+  "contributors": [
+    {
+      "name": "Alberto Nunes",
+      "email": "alberto@toki.life"
+    },
+    {
+      "name": "Gabriela Sanches",
+      "email": "gabi@toki.life"
+    },
+    {
+      "name": "Saulo Vallory",
+      "email": "saulo@toki.life"
+    }
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tokilabs/config"
+  },
+  "homepage": "https://github.com/tokilabs/config",
+  "peerDependencies": {
+    "eslint": "9.x",
+    "eslint-config-turbo": "2.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "nx": {
+    "ignore": true
+  }
 }
